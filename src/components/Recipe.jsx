@@ -1,8 +1,9 @@
+
 const Recipe = ({ image, title, steps}) => {
     return ( 
-        <div>
+        <div className='recipe-card'>
             <img src={image} alt="img" />
-            <h3>{title}</h3>
+            <h3 className='recipe-title'>{title}</h3>
             <ol className="details">
                 {steps.map(step => (
                     <li>{step.text}</li>

@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 const Category = () => {
     return ( 
         <div className="category-links">
-            <h1>catsss</h1>
-            <ul>
+            <h1>categories</h1>
+            <ul className='category-lists'>
                 <Link to='/local'> 
                     <li>Local Meals</li>
                 </Link>
@@ -21,6 +21,10 @@ const Category = () => {
                     <li>Dessert</li>
                 </Link>
             </ul>
+
+            <div className="category-img">
+                <img src="#" alt="" />
+            </div>
         </div>
     );
 }

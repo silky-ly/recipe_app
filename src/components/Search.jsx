@@ -34,12 +34,14 @@ const Search = () => {
 
     return (
         <div className="search-field">
-        <form action="#" className="search-form" onSubmit={getAct}>
-            <input type="text" className='search-bar' value={search} onChange={inputState}/>
-            <button className="search-button" type='submit'>Search</button>
-        </form>
+            <form action="#" className="search-form" onSubmit={getAct}>
+                <input type="text" className='search-bar' value={search} onChange={inputState} />
+                {/* <button className="search-button" type='submit'>S</button> */}
+            </form>
 
-        {recipies.map(recipe => <Recipe key={recipe.recipe.id} image={recipe.recipe.image} title={recipe.recipe.label} steps={recipe.recipe.ingredients}/>)}
+            <div className='reee'>
+                {recipies.map(recipe => <Recipe key={recipe.recipe.id} image={recipe.recipe.image} title={recipe.recipe.label} steps={recipe.recipe.ingredients}/>)}
+            </div>
         </div>
     );
 }
