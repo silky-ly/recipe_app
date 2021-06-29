@@ -1,13 +1,13 @@
 
 # Recipe App
 
-A recipe app where users can get recipie formulas of meals and how it is being prepared.
+A recipe app where users can get recipie formulas of meals.
 
 
 
 ## Features
 
-- Light/dark mode toggle
+- Light/dark mode toggle.
 - Sign Up.
 - Sign In.
 - Search a recipe.

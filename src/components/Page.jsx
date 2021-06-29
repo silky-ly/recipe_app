@@ -20,16 +20,14 @@ const Page = () => {
             </div>
 
             <div className="homepage-card">
-                <div className='homepage-items'>
-                    <div className='homepage-img'>
-                        <img src="https://afrotourism.com/wp-content/uploads/2018/06/ofada-sauce1.jpg" alt="" />
-                    </div>
+                <div className='homepage-img'>
+                    <img src="https://afrotourism.com/wp-content/uploads/2018/06/ofada-sauce1.jpg" alt="" />
+                </div>
 
-                    <div className='homepage-contents'>
-                        <h3>Lorem</h3>
-                        <p>Deliciously baked</p>
-                        <span>To get recipies, click here </span>
-                    </div>
+                <div className='homepage-contents'>
+                    <h3>Lorem</h3>
+                    <p>Deliciously baked</p>
+                    {/* <span>To get recipies, click here </span> */}
                 </div>
             </div>
         </div>
