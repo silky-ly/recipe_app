@@ -1,18 +1,19 @@
-import { useRef } from 'react'
+// import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
-
-    const emailRef = useRef();
-    const passwordRef = useRef();
 
     return ( 
         <div className="signin-card">
             <h2 className='signin-title'>LOGIN</h2>
             <form action="#" className='signin-form'>
-                <input type="email" name='email' placeholder='Email' ref={emailRef} />
-                <input type="password" name='password' placeholder='Password' ref={passwordRef} />
-                <button className= 'signin-btn' type='submit'>Sign In</button>
+                <input type="email" name='email' placeholder='Email' />
+                <input type="password" name='password' placeholder='Password' />
+
+                <Link to='/page'>
+                    <button className= 'signin-btn' type='submit'>Sign In</button>
+                </Link>
             </form>
 
             <div className="signin-alt">

@@ -1,16 +1,24 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import { Link } from 'react-router-dom';
+
 
 const Welcome = () => {
     return (  
         <div className='welcome-page'>
             <div className="welcome-details">
-                <header className='welcome-img'></header>
+                <div className='welcome-img'>
+                    {/* <img src="" alt="" /> */}
+                </div>
             </div>
 
             <div className="welcome-btns">
-                <button className="login btn">Login</button>
-                <button className="register btn">Register</button>
+                <Link to='/login'>
+                    <button className="login btns">Login</button>
+                </Link>
+
+                <Link to='/register'>
+                    <button className="register btns">Register</button>
+                </Link>
             </div>
         </div>
     );

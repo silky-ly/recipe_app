@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Recipe from "./Recipe";
+import { FaSearch } from "react-icons/fa";
 
 const Search = () => { 
     const APP_ID = 'cfdd6393';
@@ -36,7 +37,7 @@ const Search = () => {
         <div className="search-field">
             <form action="#" className="search-form" onSubmit={getAct}>
                 <input type="text" className='search-bar' value={search} onChange={inputState} />
-                {/* <button className="search-button" type='submit'>S</button> */}
+                <button className="search-button" type='submit'>< FaSearch /></button>
             </form>
 
             <div className='reee'>

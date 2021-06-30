@@ -6,11 +6,11 @@ import { FiMenu } from "react-icons/fi"
 // import { FaBell} from "react-icons/fa";
 // import { FaCheck} from "react-icons/fa";
 import { FaRegMoon } from "react-icons/fa";
-// import { FaSearch } from "react-icons/fa";
+
 // import { FaLongArrowAltRight } from "react-icons/fa";
 // import { FaTimes} from "react-icons/fa";
 // import { FaRegBell } from "react-icons/fa"
-// import { FaRegHeart } from "react-icons/fa"
+
 // import { FiMenu } from "react-icons/fa"
 // import { FiMenu } from "react-icons/fa"
 // import DarkModeToggle from "react-dark-mode-toggle";
@@ -19,6 +19,8 @@ const Menu = () => {
 
     const [navbarOpen, setNavbarOpen] = useState(false);
     const [darkMode, setDarkMode] = useState(() => false); 
+
+    
 
     const handleToggle = () => {
         setNavbarOpen(prev => !prev)
@@ -33,23 +35,7 @@ const Menu = () => {
         <div>
             <nav className='navbar'>
                 <div className="nav-logo">
-                    <img src="#" alt="" />
-                </div>
-
-                <div className={darkMode? 'dark-mode': 'light-mode'}>
-                    <div className="change-theme">
-                        <button className="theme-btn" onClick={() => setDarkMode(!darkMode)}><FaRegMoon onChange={setDarkMode} checked={darkMode} size={20} /></button>
-                    </div>
-                </div>
-
-                {/* <DarkModeToggle
-                    onChange={setDarkMode}
-                    checked={darkMode}
-                    size={50}
-                /> */}
-
-                <div className="nav-search">
-                    <Search />
+                    <img src="#" alt="img" />
                 </div>
 
                 <button onClick={handleToggle}>{navbarOpen ? (
@@ -75,6 +61,12 @@ const Menu = () => {
                         <li>About Us</li>
                     </Link>
                 </ul>
+
+                <div className="nav-search">
+                    <Search />
+                </div>
+
+                
             </nav>
         </div>
     );
