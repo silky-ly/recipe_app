@@ -1,6 +1,8 @@
-import { useState, useEffect } from 'react';
 import Recipe from "./Recipe";
+import { useState, useEffect } from 'react';
+import  { Redirect } from 'react-router-dom'
 import { FaSearch } from "react-icons/fa";
+
 
 const Search = () => { 
     const APP_ID = 'cfdd6393';
@@ -28,16 +30,16 @@ const Search = () => {
 
     const getAct = (e) => {
         e.preventDefault();
-        setAct(search);
+        (setAct(search))
         setSearch('')
     }
 
 
     return (
         <div className="search-field">
-            <form action="#" className="search-form" onSubmit={getAct}>
+            <form action="#" className="search-form" onSubmit={getAct} placeholder='search'>
                 <input type="text" className='search-bar' value={search} onChange={inputState} />
-                <button className="search-button" type='submit'>< FaSearch /></button>
+                < FaSearch style={{ color: "#000", width: "18px", height: "12px", marginLeft: '-30px', marginBottom: '10px' }} />
             </form>
 
             <div className='reee'>

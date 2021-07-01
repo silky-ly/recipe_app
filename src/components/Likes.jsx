@@ -1,31 +1,27 @@
-import React,{ useState, useEffect } from 'react';
-import { FaRegHeart } from "react-icons/fa"
+import React, { useState } from 'react';
+import { FaHeart } from "react-icons/fa"
+
+const colors = ['#e9ecef', 'red']
 
 const Likes = () => {
-    const [like, setLike] = useState(''); 
-
-    useEffect(() => {
-    }, [like]);
+    const [colorIn, setColorIn] = useState(0); 
 
     const handleClick = () => {
-      setLike(!like);
-    };
+      const newColorIn = colorIn + 1;
+      if (colors[newColorIn])
+          setColorIn(newColorIn);
+
+      else 
+      setColorIn(0);
+    } 
 
     return (
         <div>
-          <button
-           className="like-btn"
-              
-              onClick={handleClick}>
-                {like ? (
-                <FaRegHeart style={{ backgroundColor: "red" }} />
-            )  : like}
-
-          <FaRegHeart
-           className="like-icon"
-          />
-            </button>
-         </div> 
+          <button className="like-btn">
+                <FaHeart style={{ color: colors[colorIn],  width: "15px", height: "15px"}} onClick={handleClick} />
+          </button>
+        </div> 
     )
 }
+
 export default Likes;
