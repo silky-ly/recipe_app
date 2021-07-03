@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaHeart } from "react-icons/fa"
 
-const colors = ['#e9ecef', 'red']
+const colors = ['#000', 'red']
 
 const Likes = () => {
     const [colorIn, setColorIn] = useState(0); 

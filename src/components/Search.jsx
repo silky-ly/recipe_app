@@ -1,7 +1,7 @@
-import Recipe from "./Recipe";
 import { useState, useEffect } from 'react';
-import  { Redirect } from 'react-router-dom'
 import { FaSearch } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import Recipe from "./Recipe";
 
 
 const Search = () => { 
@@ -28,7 +28,7 @@ const Search = () => {
         console.log(search)
     }
 
-    const getAct = (e) => {
+    const onSubmit = (e) => {
         e.preventDefault();
         (setAct(search))
         setSearch('')
@@ -37,14 +37,18 @@ const Search = () => {
 
     return (
         <div className="search-field">
-            <form action="#" className="search-form" onSubmit={getAct} placeholder='search'>
+            <form action="#" className="search-form" onSubmit={onSubmit} placeholder='search'>
                 <input type="text" className='search-bar' value={search} onChange={inputState} />
-                < FaSearch style={{ color: "#000", width: "18px", height: "12px", marginLeft: '-30px', marginBottom: '10px' }} />
+                < FaSearch style={{ color: "#000", width: "18px", height: "13px", marginLeft: '-30px', marginBottom: '1px' }} />
             </form>
 
-            <div className='reee'>
-                {recipies.map(recipe => <Recipe key={recipe.recipe.id} image={recipe.recipe.image} title={recipe.recipe.label} steps={recipe.recipe.ingredients}/>)}
-            </div>
+            <Link to='/results'>
+            {recipies.map(recipe => 
+            <Recipe key={recipe.recipe.id}
+                    image={recipe.recipe.image} 
+                    title={recipe.recipe.label} 
+                    steps={recipe.recipe.ingredients}/>)}
+            </Link>
         </div>
     );
 }

@@ -1,14 +1,17 @@
 import Product from '../../components/Product'
 import desserts from '../../desserts'
 
+
 const Desserts = () => {
     return ( 
         <>
-            <h3 className='dessert-title'>Desserts</h3>
-            <div>
-                {desserts.map((dessert) => (
-                    <Product dessert= { dessert } />
-                ))}
+            <div className="dessert-container">
+                <h3 className='dessert-title'>Desserts</h3>
+                <div className='dessert-gallery'>
+                    {desserts.map((dessert) => (
+                        <Product key={ dessert._id } dessert={ dessert } />
+                    ))}
+                </div>
             </div>
         </>
     );

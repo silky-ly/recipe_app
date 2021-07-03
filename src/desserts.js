@@ -1,10 +1,27 @@
 const desserts = [
   {
     _id: '1',
-    name: 'Airpods Wireless Bluetooth Headphones',
+    name: 'Fluffy Pancakes',
     image: '/images/dessert-one.jpg',
-    description:
-      'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
+    description:'',
+    ingredients: [
+      '4 cups flour (500 g), sifted',
+      '4 tablespoons baking powder',
+      '4 cups milk (960 mL), warm to the touch',
+      '¾ cup butter (170 g), melted',
+      '3 egg yolks',
+      '4 egg whites',
+      'maple syrup, to serve'
+    ],
+    preparation: [
+      'Whisk together the flour and baking powder in a large bowl.',
+      'In a separate bowl, add the butter, milk, and egg yolks, stirring to combine.',
+      'In a third bowl, use a hand mixer to beat the egg whites until soft peaks form.',
+      'Pour the milk mixture into the flour mixture and stir with rubber spatula until just combined. Add the beaten egg whites and gently fold to combine.',
+      'Heat an 8-inch (20cm) nonstick skillet over low heat. Pour 1 ½ cups of pancake batter into the skillet, smooth out the top, then cover with a lid. Cook until golden brown on the bottom and a toothpick inserted into the center comes out clean, about 20 minutes. Transfer the pancake to a plate and repeat, making 3 more pancakes with the remaining batter.',
+      'Serve with maple syrup.',
+      'Enjoy!'
+    ],
     rating: 4.5,
     numReviews: 12,
   },
@@ -56,3 +73,23 @@ const desserts = [
 ]
 
 export default desserts
+
+export const abouts = [
+  {
+    _id: '1',
+    name: 'Faith Amiekhame',
+    image: '/images/dessert-one.jpg',
+    description:'Front-End Developer on the path to becoming a Software Engineer.',
+    rating: 4.5,
+    numReviews: 12,
+  },
+  {
+    _id: '1',
+    name: 'Faith Amiekhame',
+    image: '/images/dessert-one.jpg',
+    description:'Front-End Developer on the path to becoming a Software Engineer.',
+    rating: 4.5,
+    numReviews: 12,
+  }
+]
+

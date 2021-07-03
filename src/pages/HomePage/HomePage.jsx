@@ -17,7 +17,8 @@ const Page = () => {
                 </div>
             </div>
 
-            <div>
+                <h3 className='homepage-text'>Here are our favourite lovingly prepared recipies.</h3>
+            <div className='cards'>
                 {homepage.map((dessert) => (
                     <DisplayMeals food= { dessert } />
                 ))}

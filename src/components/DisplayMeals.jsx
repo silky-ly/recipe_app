@@ -6,16 +6,15 @@ const DisplayMeals = ({ food }) => {
     return (
         <div className="homepage-card">
             <Link to={`/homepage/${ food._id }`}>
-                <div className='homepage-img'>
+                <div className="card-img">
                     <img src={ food.image } alt="" />
                 </div>
-
-                <div className='homepage-contents'>
-                    <h3>{ food.name }</h3>
-                    <p> { food.rating }</p>
-                </div>
-                <Likes />
             </Link>
+            <div className="card-contents">
+                <h3>{ food.name }</h3>
+                <p> { food.rating }</p>
+            </div>
+            {/* <Likes /> */}
         </div>
     )
 }

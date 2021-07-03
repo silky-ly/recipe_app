@@ -1,9 +1,19 @@
-const Local = () => {
-    return ( 
-        <div>
-            <h3 className='local-title'>Efo-Riro</h3>
-        </div> 
-    );
+import loo from '../loo'
+
+const Local = ({ id, foodName, foodImage, foodDesc, foodPrep}) => {
+    return (
+        <div className='meal'>
+            <div>
+                <img src={foodImage} alt="" />
+            </div>
+            <h3>{foodName}</h3>
+            <p><strong>{foodDesc}</strong></p>
+            
+            <div className='mode-of-preparation'>
+                <p>{foodPrep}</p>
+            </div>
+        </div>
+    )
 }
 
 export default Local;
