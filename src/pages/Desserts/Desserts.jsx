@@ -1,5 +1,5 @@
-import Product from '../../components/Product'
-import desserts from '../../desserts'
+import Product from './Product'
+import desserts from '../../data/desserts'
 
 
 const Desserts = () => {

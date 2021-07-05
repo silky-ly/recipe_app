@@ -1,12 +1,12 @@
 import React from 'react';
-import DisplayAbout from '../../components/DisplayAbout';
-import abouts from '../../about';
+import DisplayAbout from './DisplayAbout';
+import abouts from '../../data/about';
 
 const About = () => {
 	return (
 		<>
 			<div className="about-us">
-				<h1 className="aboutus-title">About Us</h1>
+				<h3 className="aboutus-title">About Us</h3>
 				{abouts.map((about) => (
 					<DisplayAbout key={ about.id }about={ about } />
 				))}

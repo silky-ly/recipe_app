@@ -19,8 +19,8 @@ const HamburgerMenu = () => {
         <div className='nav-head'>
             <nav className='navbar'>
                 <button onClick={handleToggle}>{navbarOpen ? (
-                    <FaTimes style={{ color: "#000", width: "25px", height: "25px" }} />) : (
-                    <FaBars style={{ color: "#000", width: "25px", height: "25px", transition: "1s linear" }} />)}
+                    <FaTimes style={{ color: "#fff", width: "25px", height: "25px" }} />) : (
+                    <FaBars style={{ color: "#fff", width: "25px", height: "25px", transition: "1s linear", marginTop: "-5px" }} />)}
                 </button>    
 
                 <ul className={`menunav ${navbarOpen ? " showmenu" : ""}`}>

@@ -1,4 +1,3 @@
-import Menu from "../../components/HamburgerMenu";
 import { Link } from 'react-router-dom';
 
 
@@ -8,17 +7,17 @@ const Category = () => {
             <div className="category-links">
                 <h1>categories</h1>
                 <div className='category-lists'>
-                    <Link to='/desserts' exact> 
+                    <Link to='/cocktails' exact> 
                         <div className="category-card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd0pxz0uv4yMUcK_TLiWHECNifX3X1gEPAQ&usqp=CAU" alt="" />
+                            <img src="/images/mint-and-lime-cocktail.jpg" alt="" />
                             <div className="overlay"></div>
-                            <h2>Desserts</h2>
+                            <h2>Cocktails</h2>
                         </div>
                     </Link>
                     
                     <Link to='/desserts' exact> 
                         <div className="category-card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd0pxz0uv4yMUcK_TLiWHECNifX3X1gEPAQ&usqp=CAU" alt="" />
+                            <img src="/images/dessert-four.jpg" alt="" />
                             <div className="overlay"></div>
                             <h2>Desserts</h2>
                         </div>
@@ -28,71 +27,35 @@ const Category = () => {
                 <div className='category-lists'>
                     <Link to='/desserts' exact> 
                         <div className="category-card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd0pxz0uv4yMUcK_TLiWHECNifX3X1gEPAQ&usqp=CAU" alt="" />
+                            <img src="/images/zobo.jpg" alt="" />
                             <div className="overlay"></div>
-                            <h2>Desserts</h2>
+                            <h2>Drinks</h2>
                         </div>
                     </Link>
 
-                    <Link to='/desserts' exact> 
+                    <Link to='/locals' exact> 
                         <div className="category-card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd0pxz0uv4yMUcK_TLiWHECNifX3X1gEPAQ&usqp=CAU" alt="" />
+                            <img src="/images/ofada-two.jpg" alt="" />
                             <div className="overlay"></div>
-                            <h2>Desserts</h2>
+                            <h2>Local Meals</h2>
                         </div>
                     </Link>
                 </div>
                 
                 <div className='category-lists'>
-                    <Link to='/desserts' exact> 
+                    <Link to='/vegan' exact> 
                         <div className="category-card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd0pxz0uv4yMUcK_TLiWHECNifX3X1gEPAQ&usqp=CAU" alt="" />
+                            <img src="/images/vegan-one.jpg" alt="" />
                             <div className="overlay"></div>
-                            <h2>Desserts</h2>
+                            <h2>Vegan</h2>
                         </div>
                     </Link>
 
-                    <Link to='/desserts' exact> 
+                    <Link to='/wholemeals' exact> 
                         <div className="category-card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd0pxz0uv4yMUcK_TLiWHECNifX3X1gEPAQ&usqp=CAU" alt="" />
+                            <img src="/images/whole-one.jpg" alt="" />
                             <div className="overlay"></div>
-                            <h2>Desserts</h2>
-                        </div>
-                    </Link>
-                </div>
-
-                <div className='category-lists'>
-                    <Link to='/desserts' exact> 
-                        <div className="category-card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd0pxz0uv4yMUcK_TLiWHECNifX3X1gEPAQ&usqp=CAU" alt="" />
-                            <div className="overlay"></div>
-                            <h2>Desserts</h2>
-                        </div>
-                    </Link>
-
-                    <Link to='/desserts' exact> 
-                        <div className="category-card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd0pxz0uv4yMUcK_TLiWHECNifX3X1gEPAQ&usqp=CAU" alt="" />
-                            <div className="overlay"></div>
-                            <h2>Desserts</h2>
-                        </div>
-                    </Link>
-                </div>
-
-                <div className='category-lists'>
-                    <Link to='/desserts' exact> 
-                        <div className="category-card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd0pxz0uv4yMUcK_TLiWHECNifX3X1gEPAQ&usqp=CAU" alt="" />
-                            <div className="overlay"></div>
-                            <h2>Desserts</h2>
-                        </div>
-                    </Link>
-
-                    <Link to='/desserts' exact> 
-                        <div className="category-card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd0pxz0uv4yMUcK_TLiWHECNifX3X1gEPAQ&usqp=CAU" alt="" />
-                            <div className="overlay"></div>
-                            <h2>Desserts</h2>
+                            <h2>Whole Meals</h2>
                         </div>
                     </Link>
                 </div>
