@@ -3,6 +3,7 @@ import Newsletter from '../../components/Newsletter';
 import DisplayMeals from './DisplayMeals';
 import homepage from '../../data/homepage'
 import Likes from '../../components/Likes';
+import Ratings from '../../components/Ratings';
 
 
 const Page = () => {
@@ -12,11 +13,12 @@ const Page = () => {
 
             <div className='homepage-hero'>
                 <img src="/images/mint-and-lime-cocktail.jpg" alt="" className='hero-img' />
+                <Likes />
+
                 <div className="hero-btn">
                     <button id='prev'>Prev</button>
                     <button id='next'>Next</button>
                 </div>
-                <Likes style={{backgroungColor: "blue"}} />
             </div>
 
                 <h3 className='homepage-text'>Our lovingly prepared recipies.</h3>

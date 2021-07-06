@@ -2,9 +2,12 @@ import { useState, useEffect } from 'react';
 import { FaSearch } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Recipe from "./Recipe";
+import { useHistory } from 'react-router-dom';
 
 
 const Search = () => { 
+
+    const history = useHistory();
     const APP_ID = 'cfdd6393';
     const APP_KEY = '03b9a8dd88fa6192220fe65f87729aea';
 
@@ -31,25 +34,31 @@ const Search = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         (setAct(search))
+        history.push('/results')
         setSearch('')
     }
 
 
     return (
-        <div className="search-field">
-            <form action="#" className="search-form" onSubmit={onSubmit} placeholder='search'>
-                <input type="text" className='search-bar' value={search} onChange={inputState} />
-                < FaSearch style={{ color: "#000", width: "18px", height: "13px", marginLeft: '-30px', marginBottom: '1px' }} />
-            </form>
+        <>
+            <div className="search-field">
+                <form action="#" className="search-form" onSubmit={onSubmit} placeholder='search'>
+                    <input type="text" className='search-bar' value={search} onChange={inputState} />
+                    < FaSearch style={{ color: "#000", width: "18px", height: "13px", marginLeft: '-20px', marginBottom: '1px' }} />
+                </form>
+            </div>
 
-            <Link to='/results'>
-            {recipies.map(recipe => 
-            <Recipe key={recipe.recipe.id}
-                    image={recipe.recipe.image} 
-                    title={recipe.recipe.label} 
-                    steps={recipe.recipe.ingredients}/>)}
-            </Link>
-        </div>
+            <div className='recipe'>
+                {/* <h3>Results</h3> */}
+                <div className="recipe-container">
+                    {recipies.map(recipe => 
+                    <Recipe key={recipe.recipe.id}
+                            image={recipe.recipe.image} 
+                            title={recipe.recipe.label} 
+                            steps={recipe.recipe.ingredients}/>)}
+                </div>
+            </div>
+        </>
     );
 }
 

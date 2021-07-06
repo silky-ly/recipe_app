@@ -1,6 +1,7 @@
 import React from 'react'
 import Likes from '../../components/Likes'
 import { Link } from 'react-router-dom'
+import Ratings from '../../components/Ratings'
 
 const DisplayMeals = ({ food }) => {
     return (
@@ -12,7 +13,7 @@ const DisplayMeals = ({ food }) => {
             </Link>
             <div className="card-contents">
                 <h3>{ food.name }</h3>
-                <p> { food.rating }</p>
+                <p><Ratings value={ food.rating } /></p>
             </div>
             <Likes />
         </div>

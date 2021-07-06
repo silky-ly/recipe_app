@@ -2,6 +2,7 @@ import Search from './Search';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes} from "react-icons/fa";
+// import DarkModeToggle from './DarkModeToggle';
 
 
 const HamburgerMenu = () => {
@@ -17,14 +18,16 @@ const HamburgerMenu = () => {
 
     return (  
         <div className='nav-head'>
+                {/* <DarkModeToggle /> */}
             <nav className='navbar'>
                 <button onClick={handleToggle}>{navbarOpen ? (
-                    <FaTimes style={{ color: "#fff", width: "25px", height: "25px" }} />) : (
-                    <FaBars style={{ color: "#fff", width: "25px", height: "25px", transition: "1s linear", marginTop: "-5px" }} />)}
+                    <FaTimes style={{ color: "#fff", width: "25px", height: "25px" }} className='close'/>) : (
+                        <FaBars style={{ color: "#fff", width: "25px", height: "25px", transition: "1s linear", marginTop: "-5px" }} className='open' />)}
                 </button>    
 
+
                 <ul className={`menunav ${navbarOpen ? " showmenu" : ""}`}>
-                    <Link to='/' onClick={() => closeMenu()} exact>
+                    <Link to='/homepage' onClick={() => closeMenu()} exact>
                         <li>Home</li>
                     </Link>
 
@@ -38,6 +41,14 @@ const HamburgerMenu = () => {
 
                     <Link to='/about' onClick={() => closeMenu()} exact>
                         <li>About Us</li>
+                    </Link>
+
+                    <Link to='/reg'>
+                           <li><a className="menu-signup-btn">SIGN UP</a></li>
+                        </Link>
+
+                    <Link to='/login'>
+                            <li><a className="menu-signin-btn">SIGN IN</a></li> 
                     </Link>
                 </ul>
             </nav>

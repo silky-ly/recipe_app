@@ -41,6 +41,7 @@ const Register = ( { submitForm } ) => {
             confirmpassword: ''
         });
     
+       
         const [errors, SetErrors] = useState({});
         const [isSubmit, setIsSubmit] = useState(false);
     

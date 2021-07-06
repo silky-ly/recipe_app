@@ -1,5 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
+
 
 
 const Login = () => {
@@ -18,7 +20,6 @@ const Login = () => {
         if(password !== userdata.password) {
             alert ('email or password is incorrect')
         }
-
         alert('Login successful')
     }
 
@@ -30,7 +31,7 @@ const Login = () => {
                 <input type="email" name='email' placeholder='Email'  { ...register('email')} />
                 <input type="password" name='password' placeholder='Password' { ...register('password')} />
 
-                <button className= 'signin-btn' type='submit'>Sign In</button>
+                <button className= 'signin-btn' type='submit'><Link to= '/homepage' />Sign In</button>
             </form>
 
             <div className="signin-alt">

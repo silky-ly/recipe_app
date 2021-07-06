@@ -27,7 +27,7 @@ const Category = () => {
                 <div className='category-lists'>
                     <Link to='/desserts' exact> 
                         <div className="category-card">
-                            <img src="/images/zobo.jpg" alt="" />
+                            <img src="/images/cocktail-gin-rickey.jpg" alt="" />
                             <div className="overlay"></div>
                             <h2>Drinks</h2>
                         </div>
@@ -43,11 +43,11 @@ const Category = () => {
                 </div>
                 
                 <div className='category-lists'>
-                    <Link to='/vegan' exact> 
+                    <Link to='/vegans' exact> 
                         <div className="category-card">
                             <img src="/images/vegan-one.jpg" alt="" />
                             <div className="overlay"></div>
-                            <h2>Vegan</h2>
+                            <h2>Vegan Meals</h2>
                         </div>
                     </Link>
 
