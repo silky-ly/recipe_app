@@ -26,7 +26,7 @@ const Reg = () => {
         if (userExist) {
             return alert ('This user has already been registered')
         } alert('Registered Successfully')
-            history.push('/login')
+            history.push('/homepage')
 
         const newUser = JSON.stringify({
             email: email, 

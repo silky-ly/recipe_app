@@ -65,6 +65,7 @@ body {
   background-color: #000;
   border: 3px solid #000;
   margin-left: 10px;
+  color: #fff;
 }
 
 /* SIGN UP */
@@ -162,7 +163,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 10% auto;
-  min-height: 80vh;
   background-color: #fff;
 }
 
@@ -301,12 +301,12 @@ li:first-child {
   justify-content: center;
   align-items: center;
   position: fixed;
-  right: 70px;
+  right: 40px;
   top: 7px;
 }
 
 .search-bar {
-  width: 170px;
+  width: 200px;
   height: 30px;
   border: 2px solid #000;
   border-radius: 4px;
@@ -336,7 +336,7 @@ li:first-child {
 }
 
 .homepage-title span {
-  color: yellow;
+  color: #70e000;
   font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
 }
@@ -448,8 +448,8 @@ li:first-child {
 
 hr {
   background-color: #000;
-  width: 80%;
-  margin: 30px auto;
+  max-width: 40%;
+  margin: start;
   height: 5px;
   border: none;
 }
@@ -488,7 +488,7 @@ hr {
   border-radius: 4px;
   object-fit: cover;
   width: 100%;
-  height: 150px;
+  height: 200px;
 }
 
 .overlay{
@@ -497,7 +497,7 @@ hr {
   top: 0;
   left: 0;
   width: 100%;
-  height: 150px;
+  height: 200px;
   margin: 0 auto;
   z-index: 10;
   background-color: rgba(0,0,0,0.5);
@@ -541,6 +541,8 @@ hr {
   grid-auto-rows: 100px;
   grid-gap: 70px 10px;
   padding: 10px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .gallery__dessert {
@@ -650,7 +652,7 @@ hr {
 
 /* FEATURES */
 .features {
-  width: 100%;
+  width: 70%;
   background-color: #fff;
   margin: 0 auto;
 }
@@ -752,7 +754,7 @@ hr {
 }
 
 .gallery__item:hover {
-  transform: scale(1.01);
+  transform: scale(1.1);
   cursor: pointer;
   transition: .9s ease;
 }
@@ -865,6 +867,8 @@ hr {
   grid-auto-rows: 100px;
   grid-gap: 70px 10px;
   padding: 10px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 figure {
@@ -943,6 +947,8 @@ figure .rating span {
   grid-auto-rows: 100px;
   grid-gap: 70px 10px;
   padding: 10px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .vegans img {

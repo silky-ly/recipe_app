@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useHistory } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
 
@@ -7,6 +8,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
 
     const { register, handleSubmit} = useForm()
+    const history = useHistory();
 
     const login = ({ email, password }) => {
         const user = localStorage.getItem(email)
@@ -21,6 +23,7 @@ const Login = () => {
             alert ('email or password is incorrect')
         }
         alert('Login successful')
+        history.push('/homepage')
     }
 
 
@@ -35,7 +38,7 @@ const Login = () => {
             </form>
 
             <div className="signin-alt">
-                Don't have an account? <a href="./hompage"> Create account</a> 
+                Don't have an account? <a href="./reg"> Create account</a> 
             </div>
         </div>
     );

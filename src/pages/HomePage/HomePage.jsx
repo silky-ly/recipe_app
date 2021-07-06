@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Newsletter from '../../components/Newsletter';
 import DisplayMeals from './DisplayMeals';
 import homepage from '../../data/homepage'
 import Likes from '../../components/Likes';
-import Ratings from '../../components/Ratings';
+// import Ratings from '../../components/Ratings';
+// import { Carousel } from 'react-responsive-carousel';
 
 
 const Page = () => {
+
+
     return (
         <div className='homepage-container'>
             <h2 className='homepage-title'>This Week's <span>Favourite</span></h2>

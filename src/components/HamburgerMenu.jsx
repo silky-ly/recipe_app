@@ -22,7 +22,7 @@ const HamburgerMenu = () => {
             <nav className='navbar'>
                 <button onClick={handleToggle}>{navbarOpen ? (
                     <FaTimes style={{ color: "#fff", width: "25px", height: "25px" }} className='close'/>) : (
-                        <FaBars style={{ color: "#fff", width: "25px", height: "25px", transition: "1s linear", marginTop: "-5px" }} className='open' />)}
+                        <FaBars style={{ color: "#70e000", width: "25px", height: "25px", transition: "1s linear", marginTop: "-5px" }} className='open' />)}
                 </button>    
 
 
@@ -36,7 +36,7 @@ const HamburgerMenu = () => {
                     </Link>
 
                     <Link to='/features' onClick={() => closeMenu()} exact>
-                        <li>Features</li>
+                        <li>Gallery</li>
                     </Link>
 
                     <Link to='/about' onClick={() => closeMenu()} exact>

@@ -15,7 +15,7 @@ const Welcome = () => {
                     <button className="login btns">Login</button>
                 </Link>
 
-                <Link to='/register' exact>
+                <Link to='/reg' exact>
                     <button className="register btns">Register</button>
                 </Link>
             </div>
