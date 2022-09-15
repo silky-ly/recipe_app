@@ -1,14 +1,19 @@
 import React from "react";
+import Layout from '../../components/Layout'
 
 const Feature = () => {
     return (
-        <>
+        <Layout>
             <div className='features'>
-                <h1 className='feature-title'>Eat me</h1>
-                <div class="gallery">
-                    <figure className="gallery__item gallery__item--1">
+                <div className="features_heading">
+                    <div className="features_line"></div>
+                    <h1 className='features_title'>Explore</h1>
+                </div>
+
+                <div class="features_gallery">
+                    <div className="gallery__item gallery__item--1">
                         <img src="/images/cheesecake-eggrolls.jpg" class="gallery__img" alt="" />
-                    </figure>
+                    </div>
 
                     <figure className="gallery__item gallery__item--2">
                         <img src="/images/cocktail-cafe-caribbean.jpg" class="gallery__img" alt="" />
@@ -27,7 +32,7 @@ const Feature = () => {
                     </figure>
                 </div>
 
-                <div class="gallery">
+                <div class="features_gallery">
                     <figure className="gallery__item gallery__item--6">
                         <img src="/images/vegan-pad-thai.jpg" class="gallery__img" alt="" />
                     </figure>
@@ -49,7 +54,7 @@ const Feature = () => {
                     </figure>
                 </div>
             </div>
-        </>
+        </Layout>
     );
 }
 

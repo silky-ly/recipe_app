@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Login from '../Login/Login';
-// import { Link } from 'react-router-dom';
-
+import Default from '../../components/Default'
 
 const Form = () => {
     
@@ -102,34 +101,36 @@ const Register = ( { submitForm } ) => {
 
 
     return (  
-        <div className="sign-up">
-            <div className="signup-card">
-                <h2>Welcome</h2>
-                <p className='signup-contents'>Let's create your account!</p>
+        <Default>
+            <div className="sign-up">
+                <div className="signup-card">
+                    <h2>Welcome</h2>
+                    <p className='signup-contents'>Let's create your account!</p>
+                    
+                    {/* <Blob size="100vh" style={{ color: "#7b7b7b", width: "35px", height: "35px" }} /> */}
+                    <form action="#" className='signup-form' onSubmit={ handleSubmit }>
+                        <input type="text" name='fullname' id='fullname' placeholder='Full Name' value={values.fullname} onChange={handleChange} />
+                        {errors.fullname && <p>{errors.fullname}</p>}
+
+                        <input type="email" name='email' id='email' placeholder='Email' value={values.email} onChange={handleChange} />
+                        {errors.email && <p>{errors.email}</p>}
+
+                        <input type="password" name='password' id='password' placeholder='Password' value={values.password} onChange={handleChange} />
+                        {errors.password && <p>{errors.password}</p>}
+
+                        <input type="password" name='confirmpassword' id='confirmpassword' placeholder='Confirm Password' value={values.confirmpassword} onChange={handleChange} />
+                        {errors.confirmpassword && <p>{errors.confirmpassword}</p>}
+
                 
-                {/* <Blob size="100vh" style={{ color: "#7b7b7b", width: "35px", height: "35px" }} /> */}
-                <form action="#" className='signup-form' onSubmit={ handleSubmit }>
-                    <input type="text" name='fullname' id='fullname' placeholder='Full Name' value={values.fullname} onChange={handleChange} />
-                    {errors.fullname && <p>{errors.fullname}</p>}
+                        <button className= 'signup-btn' type='submit'>Sign Up</button>
+                    </form>
 
-                    <input type="email" name='email' id='email' placeholder='Email' value={values.email} onChange={handleChange} />
-                    {errors.email && <p>{errors.email}</p>}
-
-                    <input type="password" name='password' id='password' placeholder='Password' value={values.password} onChange={handleChange} />
-                    {errors.password && <p>{errors.password}</p>}
-
-                    <input type="password" name='confirmpassword' id='confirmpassword' placeholder='Confirm Password' value={values.confirmpassword} onChange={handleChange} />
-                    {errors.confirmpassword && <p>{errors.confirmpassword}</p>}
-
-            
-                    <button className= 'signup-btn' type='submit'>Sign Up</button>
-                </form>
-
-                <div className="signup-alt">
-                    Already have an account? <a href="./login"> Sign In</a> 
+                    <div className="signup-alt">
+                        Already have an account? <a href="./login"> Sign In</a> 
+                    </div>
                 </div>
             </div>
-        </div>
+        </Default>
     );
 }
 

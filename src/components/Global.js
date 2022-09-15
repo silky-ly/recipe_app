@@ -10,6 +10,7 @@ export const Global = createGlobalStyle`
 
     nav {
         background: ${({ theme }) => theme.body};
+        border-bottom: 2px solid ${({ theme }) => theme.nav};
         transition: all .5s linear
     }
 
@@ -44,11 +45,6 @@ export const Global = createGlobalStyle`
 
     .signup-contents {
         color: ${({ theme }) => theme.text};
-    }
-
-    nav {
-        border-bottom: 2px solid ${({ theme }) => theme.nav};
-        transition: all .5s linear
     }
 
     .category-menu {
@@ -115,5 +111,6 @@ export const darkTheme = {
     next: '#fff',
     tonext : '#000',
     bar: '#fff',
-    hhh: '#6247aa'
+    hhh: '#6247aa',
+    nav: "#fff",
 }

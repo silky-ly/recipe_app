@@ -1,21 +1,25 @@
 import React from 'react'
-import Likes from '../../components/Likes'
 import { Link } from 'react-router-dom'
+import Likes from '../../components/Likes'
 import Ratings from '../../components/Ratings'
 
 const DisplayMeals = ({ food }) => {
     return (
-        <div className="homepage-card">
+        <div className="homepage_card">
             <Link to={`/homepage/${ food._id }`}>
-                <div className="card-img">
+                <div className="homecard_img">
                     <img src={ food.image } alt="" />
                 </div>
             </Link>
-            <div className="card-contents">
+
+            <div className="homecard_content">
                 <h3>{ food.name }</h3>
-                <p><Ratings value={ food.rating } /></p>
+
+                <div className="homecard_rate">
+                    <p><Ratings value={ food.rating } /></p>
+                    <Likes />
+                </div>
             </div>
-            <Likes />
         </div>
     )
 }

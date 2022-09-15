@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Ratings from "../../components/Ratings";
+// import Ratings from "../../components/Ratings";
 
 
 const DisplayVegans = ({ vegan }) => {
     return ( 
-        <figure>
+        <figure className="vegan_images">
             <Link to={`/vegan/${ vegan._id }`}>
-                <img src={ vegan.image } class="cocktail-img" alt="" />
+                <img src={ vegan.image } class="vegan_img" alt="" />
             </Link>
-            <div className="rating">
-                <p><Ratings value={ vegan.rating } /></p>
+            <div className="vegan_rating">
+                {/* <p><Ratings value={ vegan.rating } /></p> */}
             </div>
         </figure>
     )

@@ -2,7 +2,6 @@ import React from 'react'
 import { useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
-
 const Reg = () => {
     const { register, handleSubmit, errors} = useForm();
     const history = useHistory();
@@ -56,8 +55,7 @@ const Reg = () => {
     return (  
         <div className="sign-up">
             <div className="signup-card">
-                <h2>Welcome</h2>
-                <p className='signup-contents'>Let's create your account!</p>
+                <p className='signup-title'>Let's create your account!</p>
                 
                 <form action="#" className='signup-form' onSubmit={handleSubmit(registerUser)}>
                     <input type="text" name='fullname' id='fullname' placeholder='Full Name' { ...register('fullname', { required: true}) } />

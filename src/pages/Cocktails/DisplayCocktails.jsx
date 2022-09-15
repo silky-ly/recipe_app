@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Ratings from "../../components/Ratings";
+// import Ratings from "../../components/Ratings";
 
 
 const DisplayCocktails = ({ cocktail }) => {
     return ( 
         <>
-        <figure>
+        <figure className="cocktails_images">
             <Link to={`/cocktail/${ cocktail._id }`}>
-                <img src={ cocktail.image } class="cocktail-img" alt="" />
-            <div className="rating">
-                <p><Ratings value={ cocktail.rating } /></p>
+                <img src={ cocktail.image } class="cocktail_img" alt="" />
+            <div className="cocktails_rating">
+                {/* <p><Ratings value={ cocktail.rating } /></p> */}
             </div>
             </Link>
         </figure>
