@@ -117,6 +117,10 @@ nav a {
     letter-spacing: 2px; 
 }
 
+.menu-signup-btn {
+    color: #6d6875;
+}
+
 /* search */
 .search-form {
     display: flex;

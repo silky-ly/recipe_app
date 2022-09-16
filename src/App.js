@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Welcome from './pages/Welcome/Welcome';
 import Reg from './pages/Register/Reg';
 import Login from './pages/Login/Login';
-// import HamburgerMenu from './components/Navbar';
 import HomePage from './pages/HomePage/HomePage';
 import Category from './pages/Category/Category';
 import Cocktails from './pages/Cocktails/Cocktails';
@@ -38,7 +37,6 @@ function App() {
 								theme={theme}
 								toggleTheme={toggleTheme}
 							/>{' '} */}
-							{/* <HamburgerMenu />{' '} */}
 							<Route exact path="/" component={Welcome} />{' '}
 							<Route path="/reg" component={Reg} />{' '}
 							<Route exact path="/login" component={Login} />{' '}
