@@ -16,15 +16,3 @@ A recipe app where users can get recipie formulas of meals.
 - Like a recipe.
 
   
-## Contributing
-
-Contributions are always welcome!
-
-Current contributors:
-- Faith Amiekhame
-- Evelyn Ita
-- Precious Mokgoebo
-- Adanma Okwuchi
-- Lolade Lawal
-
-  
